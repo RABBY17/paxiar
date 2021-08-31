@@ -3,10 +3,6 @@
                 prelimineies
 ==================================================
 */
-/* ===== google fonts ===== */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
 *,
 *::after,
 *::before {
@@ -73,12 +69,7 @@ button[type="reset"] {
                 style for this page
 ==================================================
 */
-/* font-family: 'Raleway', sans-serif; 
-  font-family: 'Montserrat', sans-serif;
-*/
-body{
-  font-family: 'Montserrat', sans-serif;
-}
+/* ===== sass variables ===== */
 p {
   font-size: 14px;
 }
@@ -133,7 +124,7 @@ p {
 
 .header__top {
   background: #EFEFEF;
-  padding: 10px 0;
+  padding: 15px 0;
   font-family: 'Montserrat';
 }
 
@@ -181,16 +172,14 @@ p {
 
 #navbar {
   -webkit-transition: .3s all linear;
-  -o-transition: .3s all linear;
   transition: .3s all linear;
 }
 
 header {
-  -webkit-transition: .3s all linear;
-  -o-transition: .3s all linear;
-  transition: .3s all linear;
-  padding: 25px 0;
+  padding: 20px 0;
   font-family: 'Montserrat';
+  position: relative;
+  z-index: 9;
 }
 
 header .header__content {
@@ -254,12 +243,11 @@ header .toggler-btn {
 
 .sticky {
   position: fixed;
-  padding: 10px 0;
-  top: 0;
   width: 100%;
+  top: 0;
+  left: 0;
   z-index: 999999999;
   -webkit-transition: .3s all linear;
-  -o-transition: .3s all linear;
   transition: .3s all linear;
   background: #fff;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -279,7 +267,6 @@ header .toggler-btn {
   background-size: cover;
   position: relative;
   z-index: 1;
-  /*menu toggler icon*/
 }
 
 .banner::before {
@@ -290,7 +277,6 @@ header .toggler-btn {
   top: 0;
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.6)), to(rgba(51, 51, 51, 0.6)));
-  background: -o-linear-gradient(rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.6));
   background: linear-gradient(rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.6));
   z-index: -1;
 }
@@ -346,7 +332,6 @@ header .toggler-btn {
   margin: 0 15px;
   font-family: 'Montserrat';
   -webkit-transition: .1s all linear;
-  -o-transition: .1s all linear;
   transition: .1s all linear;
 }
 
@@ -369,39 +354,6 @@ header .toggler-btn {
 .banner__content .contact-us:hover {
   background: #FF9B1A;
   border: 1px solid #FF9B1A;
-}
-
-.banner .toggler-btn {
-  cursor: pointer;
-  position: relative;
-}
-
-.banner .bar1,
-.banner .bar2,
-.banner .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #73b21a;
-  margin: 6px 0;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.banner .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  -ms-transform: rotate(-45deg) translate(-9px, 6px);
-      transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.banner .change .bar2 {
-  opacity: 0;
-}
-
-.banner .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  -ms-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /*
@@ -433,7 +385,6 @@ header .toggler-btn {
   text-align: center;
   z-index: 1;
   -webkit-transition: .3s all linear;
-  -o-transition: .3s all linear;
   transition: .3s all linear;
 }
 
@@ -446,15 +397,12 @@ header .toggler-btn {
   left: 0;
   border-radius: 10px;
   -webkit-transform: scale(1.05);
-          -ms-transform: scale(1.05);
-      transform: scale(1.05);
+          transform: scale(1.05);
   opacity: 0;
   z-index: -1;
   -webkit-transition: .3s all linear;
-  -o-transition: .3s all linear;
   transition: .3s all linear;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 155, 26, 0.7)), to(rgba(255, 155, 26, 0.7))), url(../images/feature-item-bg.jpg);
-  background: -o-linear-gradient(rgba(255, 155, 26, 0.7), rgba(255, 155, 26, 0.7)), url(../images/feature-item-bg.jpg);
   background: linear-gradient(rgba(255, 155, 26, 0.7), rgba(255, 155, 26, 0.7)), url(../images/feature-item-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -468,8 +416,7 @@ header .toggler-btn {
 .method__item:hover::after {
   opacity: 1;
   -webkit-transform: scale(1);
-          -ms-transform: scale(1);
-      transform: scale(1);
+          transform: scale(1);
 }
 
 .method__item:hover span, .method__item:hover h3, .method__item:hover p {
@@ -635,10 +582,8 @@ header .toggler-btn {
   border-radius: 5px;
   margin-right: 10px;
   -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+          transform: rotate(45deg);
   -webkit-transition: .3s all linear;
-  -o-transition: .3s all linear;
   transition: .3s all linear;
 }
 
@@ -752,8 +697,7 @@ header .toggler-btn {
   top: 0;
   left: 0;
   -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+          transform: rotate(45deg);
   border-radius: 7px;
 }
 
@@ -812,7 +756,6 @@ header .toggler-btn {
 .features__items .image {
   -ms-grid-column: 5;
       grid-column-start: 5;
-  -ms-grid-column-span: 4;
   grid-column-end: 9;
   -ms-grid-row: 2;
       grid-row-start: 2;
@@ -927,6 +870,9 @@ header .toggler-btn {
 .contact {
   padding: 60px 0;
   background: url(../images/form-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .contact .section_title h2 {
@@ -977,13 +923,6 @@ header .toggler-btn {
   color: #fff;
 }
 
-.contact__form form input::-moz-placeholder {
-  font-family: 'Montserrat';
-  font-size: 14px;
-  font-weight: 300;
-  color: #fff;
-}
-
 .contact__form form input::placeholder {
   font-family: 'Montserrat';
   font-size: 14px;
@@ -994,7 +933,6 @@ header .toggler-btn {
 .contact__form form textarea {
   -ms-grid-column: 1;
       grid-column-start: 1;
-  -ms-grid-column-span: -2;
   grid-column-end: -1;
   color: #fff;
   font-size: 16px;
@@ -1020,13 +958,6 @@ header .toggler-btn {
 }
 
 .contact__form form textarea::-ms-input-placeholder {
-  font-family: 'Montserrat';
-  font-size: 14px;
-  font-weight: 300;
-  color: #fff;
-}
-
-.contact__form form textarea::-moz-placeholder {
   font-family: 'Montserrat';
   font-size: 14px;
   font-weight: 300;
@@ -1143,7 +1074,7 @@ header .toggler-btn {
 
 /*
 ==================================================
-                    Blog css
+                    Testimonial css
 ==================================================
 */
 .testimonial {
@@ -1215,8 +1146,7 @@ header .toggler-btn {
   width: 100%;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: 9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1397,13 +1327,6 @@ header .toggler-btn {
   color: #989898;
 }
 
-.footer .item4 form input::-moz-placeholder {
-  font-family: 'Montserrat';
-  font-size: 14px;
-  font-weight: 400;
-  color: #989898;
-}
-
 .footer .item4 form input::placeholder {
   font-family: 'Montserrat';
   font-size: 14px;
@@ -1442,3 +1365,4 @@ header .toggler-btn {
 .footer .copyright p a:hover {
   text-decoration: underline;
 }
+/*# sourceMappingURL=style.css.map */
