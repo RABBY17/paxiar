@@ -1,4 +1,15 @@
 
+var myVar;
+
+function loadFunction() {
+  myVar = setTimeout(showPage, 500);
+}
+
+function showPage() {
+  document.getElementById("loader-container").style.display = "none";
+  // document.getElementById("myDiv").style.display = "block";
+}
+
 /* toggler btn activation */
 $(".toggler-btn").click(function(){
   $("nav").addClass("open-nav");

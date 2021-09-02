@@ -70,6 +70,103 @@ button[type="reset"] {
 ==================================================
 */
 /* ===== sass variables ===== */
+#loader-container {
+  position: fixed;
+  display: block;
+  z-index: 99999999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+@-webkit-keyframes ldio-ru1b8dj3q8 {
+  0% {
+    top: 48px;
+    left: 48px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 9px;
+    left: 9px;
+    width: 78px;
+    height: 78px;
+    opacity: 0;
+  }
+}
+
+@keyframes ldio-ru1b8dj3q8 {
+  0% {
+    top: 48px;
+    left: 48px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 9px;
+    left: 9px;
+    width: 78px;
+    height: 78px;
+    opacity: 0;
+  }
+}
+
+.ldio-ru1b8dj3q8 div {
+  position: absolute;
+  border-width: 3px;
+  border-style: solid;
+  opacity: 1;
+  border-radius: 50%;
+  -webkit-animation: ldio-ru1b8dj3q8 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+          animation: ldio-ru1b8dj3q8 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.ldio-ru1b8dj3q8 div:nth-child(1) {
+  border-color: #7f7f7f;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.ldio-ru1b8dj3q8 div:nth-child(2) {
+  border-color: #ffffff;
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+.loadingio-spinner-ripple-shx55uk2vph {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ldio-ru1b8dj3q8 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateZ(0) scale(1);
+          transform: translateZ(0) scale(1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  /* see note above */
+}
+
+.ldio-ru1b8dj3q8 div {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 p {
   font-size: 14px;
 }
